@@ -11,9 +11,9 @@ import java.sql.Statement;
 public class ApplicationJdbc {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		Class.forName("oracle.jdbc.OracleDriver");
-		String url = "jdbc:oracle:thin:@192.168.2.6:1521:orcl";
-		String user = "JPERPDATA";
-		String pwd = "JPERPDATA";
+		String url = "jdbc:oracle:thin:localhost:1521:orcl";
+		String user = "DATA";
+		String pwd = "DATA";
 		Connection con = DriverManager.getConnection(url,user,pwd);
 		System.out.println("连接获取成功...");
 		Statement st = con.createStatement();
